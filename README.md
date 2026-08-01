@@ -1,2 +1,17 @@
 # Adrian-WebOS
-This is my own WebOS, it contians an image as well as a link to my website.
+This is a functional WebOS containing a note app and a app to connect with me. 
+
+Try it here
+https://adrian-web-os.vercel.app/
+
+Features include 
+•An interactive drop-down 
+•A note taking app
+•An app to connect with me
+•A link to create your own site
+
+Credits
+Stardance 
+Hack Club 
+W3 schools
+Google 
