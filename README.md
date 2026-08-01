@@ -10,8 +10,8 @@ Features include
 •An app to connect with me
 •A link to create your own site
 
-Credits
-Stardance 
-Hack Club 
-W3 schools
+Credits <br>
+Stardance <br>
+Hack Club <br>
+W3 schools<br>
 Google 
