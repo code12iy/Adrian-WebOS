@@ -1,0 +1,310 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  background-color: rgba(0, 255, 65, 0.22);
+  backdrop-filter: blur(10px);
+}
+
+.topbar p {
+  margin: 10px 0;
+  padding: 4px 12px;
+
+  background-color: rgba(0, 255, 65, 0.18);
+  border-radius: 16px;
+}
+
+#desktopApps {
+  position: absolute;
+  top: 80px;
+  left: 16px;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-icon {
+  width: fit-content;
+  padding: 16px;
+
+  text-align: center;
+  cursor: pointer;
+
+  border: 2px solid transparent;
+  border-radius: 14px;
+
+  filter: drop-shadow(0 0 8px rgb(165, 255, 151));
+}
+
+.app-icon img {
+  width: 71px;
+  height: 71px;
+
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.app-icon p {
+  max-width: 130px;
+  margin: 4px 0 0;
+
+  color: #47d35a;
+  font-weight: bold;
+}
+
+.app-icon.selected {
+  background-color: rgba(0, 255, 65, 0.25);
+  border-color: #00ff41;
+  box-shadow: 0 0 14px rgba(0, 255, 65, 0.7);
+}
+
+.desktop-content {
+  padding: 350px 20px 80px;
+}
+
+.desktop-content h1 {
+  display: inline-block;
+  padding: 8px 14px;
+
+  color: white;
+  background-color: rgba(0, 128, 51, 0.9);
+  border-radius: 10px;
+}
+
+.desktop-content p,
+.desktop-content h3,
+.desktop-content h4,
+.desktop-content label {
+  color: white;
+  text-shadow: 0 1px 4px black;
+}
+
+.desktop-content a {
+  color: #00ff41;
+  font-weight: bold;
+}
+
+.wildlife-image {
+  width: 300px;
+  height: 300px;
+
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.open-button {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  z-index: 5;
+
+  padding: 10px 16px;
+
+  color: #00ff41;
+  background-color: #003b17;
+  border: 2px solid #00ff41;
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.open-button:hover {
+  background-color: #005c24;
+}
+
+.window {
+  position: absolute;
+  z-index: 20;
+
+  color: white;
+  background-color: #03140a;
+
+  border: 3px solid #00ff41;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.welcome-window {
+  top: 180px;
+  left: 700px;
+  width: 320px;
+}
+
+.builders-window {
+  top: 140px;
+  left: 920px;
+  width: 460px;
+
+  display: none;
+}
+
+.my-app-window {
+  top: 210px;
+  left: 900px;
+  width: 550px;
+
+  display: none;
+}
+
+.window-header {
+  padding: 10px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #00ff41;
+  background-color: #003b17;
+
+  cursor: grab;
+  font-weight: bold;
+  user-select: none;
+}
+
+.window-header:active {
+  cursor: grabbing;
+}
+
+.window-content {
+  padding: 18px;
+}
+
+.window-content h2 {
+  margin-top: 0;
+}
+
+.close-button {
+  width: 42px;
+  height: 34px;
+
+  color: #ff4040;
+  background-color: #001a08;
+
+  border: 2px solid #00ff41;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.close-button:hover {
+  color: white;
+  background-color: #8b0000;
+  border-color: #ff4040;
+}
+form {
+  margin: 0 auto;
+  width: 400px;
+
+  padding: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+}
+
+div + div {
+  margin-top: 1em;
+}
+
+label {
+  
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+ 
+  font: 1em sans-serif;
+
+  width: 300px;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  border: 1px solid #999999;
+}
+
+input:focus,
+textarea:focus {
+
+  border-color: black;
+}
+
+textarea {
+ 
+  vertical-align: top;
+
+  
+  height: 5em;
+
+  resize: vertical;
+}
+
+.button {
+ 
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+
+  margin-left: 0.5em;
+}
+#myAppIcon {
+  position: relative;
+  top: -175px;
+  left: 220px;
+}
+label,
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 1px #999999;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
