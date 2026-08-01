@@ -237,3 +237,13 @@ if (noteField && saveNoteButton && saveStatus) {
     }
   );
 }
+const animalDropdown = document.getElementById("animals");
+
+if (animalDropdown) {
+  animalDropdown.addEventListener("change", function () {
+    const selectedAnimal =
+      animalDropdown.options[animalDropdown.selectedIndex].text;
+
+    alert("You selected: " + selectedAnimal);
+  });
+}
